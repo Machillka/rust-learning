@@ -5,6 +5,10 @@ use gramma::structure;
 
 
 fn main() {
+    let x: i32 = 3;
+    let plus_x = |y: i32| y + x;
+    let num: i32 = 5;
+    println!("{0} + {1} = {2}",num, x, plus_x(num));
     ownership::variables_test();
     ownership::ownership();
     ownership::try_match_test();
